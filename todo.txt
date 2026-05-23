@@ -1,0 +1,2 @@
+1. Dodaj jest aby pisać testy jednostkowe
+2. docker ? możesz to akurat zrobić póżniej
