@@ -1,2 +1,2 @@
-1. Dodaj jest aby pisać testy jednostkowe
+1. usuń możliwość przeciągania z grafik
 2. docker ? możesz to akurat zrobić póżniej
