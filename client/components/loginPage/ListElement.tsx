@@ -1,13 +1,26 @@
+interface ListElementProps {
+  text: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
+  iconColor?: string;
+  bgColor?: string;
+}
+
 const ListElement = ({
   text,
   description,
-}: {
-  text: string;
-  description: string;
-}) => {
+  icon,
+  iconColor,
+  bgColor,
+}: ListElementProps) => {
   return (
-    <div>
-      <h2>{text}</h2> <p>{description}</p>
+    <div className="listElement">
+      <div className="icon" style={bgColor ? { backgroundColor: bgColor } : {}}>
+        {icon}
+      </div>
+      <div className="content">
+        <h2>{text}</h2> <p>{description}</p>
+      </div>
     </div>
   );
 };

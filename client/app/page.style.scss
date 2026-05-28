@@ -68,18 +68,19 @@ body,
     }
     main {
       position: absolute;
-      top: 50%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 70%;
-      height: 60%;
+      height: 70%;
       .swiperContent {
         width: 100%;
         height: 100%;
         color: #fbfbfc;
         padding: 10px;
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15%;
         h2 {
           font-size: clamp(1.5rem, 3vw, 3.5rem);
         }
@@ -88,14 +89,41 @@ body,
         }
         .description {
           margin-top: 15px;
+          margin-bottom: 25px;
           letter-spacing: 2px;
           font-size: clamp(0.8rem, 1.5vw, 1.25rem);
           opacity: 0.8;
           font-weight: 400;
         }
         .loginList {
-          border: 2px solid red;
-          flex-grow:1;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          .listElement {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            .icon {
+              box-shadow: 0 0 2px 0.5px rgba(128, 128, 128, 0.322);
+              background-color: #191b3d;
+              border-radius: 10px;
+              padding: 15px;
+              margin-right: 20px;
+            }
+            .content {
+              display: flex;
+              flex-direction: column;
+              h2 {
+                font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+                margin-bottom: 10px;
+              }
+              p {
+                flex-grow: 1;
+                opacity: 0.8;
+                letter-spacing: 1px;
+              }
+            }
+          }
         }
       }
       .swiper,

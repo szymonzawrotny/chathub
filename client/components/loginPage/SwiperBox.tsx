@@ -1,6 +1,7 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { ListItem } from '@/constants/types';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,23 +10,87 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
 
 import ListElement from '@/components/loginPage/ListElement';
+import { BsPeopleFill } from 'react-icons/bs';
+import {
+  IoChatbubbleEllipsesOutline,
+  IoChatbubbleEllipsesSharp,
+} from 'react-icons/io5';
+import { GoGear } from 'react-icons/go';
+import { FaRegBell, FaRegFileAlt, FaRegUser } from 'react-icons/fa';
+import { MdGroups } from 'react-icons/md';
+import { IoEarthSharp } from 'react-icons/io5';
 
 const SwiperBox = () => {
-  const lists = [
+  const lists: ListItem[][] = [
     [
-      { title: 'Społeczność', description: 'asd', icon: 'asd' },
-      { title: 'Komunikacja', description: 'asd', icon: 'asd' },
-      { title: 'Personalizacja', description: 'asd', icon: 'asd' },
+      {
+        title: 'Społeczność',
+        description: (
+          <>
+            Twórz lub dołączaj do społeczności <br />
+            dopasowanych do Ciebie.
+          </>
+        ),
+        icon: <BsPeopleFill size={36} />,
+      },
+      {
+        title: 'Komunikacja',
+        description: (
+          <>
+            Pisz, rozmawiaj głosowo i bądź <br /> zawsze w kontakcie.
+          </>
+        ),
+        icon: <IoChatbubbleEllipsesOutline size={36} />,
+      },
+      {
+        title: 'Personalizacja',
+        description: (
+          <>
+            Dostosuj swoje doświadczenie <br /> do własnych potrzeb.
+          </>
+        ),
+        icon: <GoGear size={36} />,
+      },
     ],
     [
-      { title: 'Społeczność', description: 'asd', icon: 'asd' },
-      { title: 'Komunikacja', description: 'asd', icon: 'asd' },
-      { title: 'Personalizacja', description: 'asd', icon: 'asd' },
+      {
+        title: 'Czaty grupowe i prywatne',
+        description: 'Rozmawiaj w sposób, który Ci odpowiada.',
+        icon: <IoChatbubbleEllipsesSharp size={36} />,
+      },
+      {
+        title: 'Powiadomienia w czasie rzeczywistym',
+        description: 'Bądż zawsze na bieżaco z najważniejszymi wydarzeniami.',
+        icon: <FaRegBell size={36} />,
+      },
+      {
+        title: 'Udostępnianie bez ograniczeń',
+        description: 'Wysyłaj pliki, linki i media w kilka sekund.',
+        icon: <FaRegFileAlt size={36} />,
+      },
     ],
     [
-      { title: 'Społeczność', description: 'asd', icon: 'asd' },
-      { title: 'Komunikacja', description: 'asd', icon: 'asd' },
-      { title: 'Personalizacja', description: 'asd', icon: 'asd' },
+      {
+        title: '50K+',
+        description: 'Aktywnych społeczności',
+        icon: <MdGroups size={36} />,
+        iconColor: 'red',
+        bgColor: '#1c1545',
+      },
+      {
+        title: '2M+',
+        description: 'Zadowolonych użytkowników',
+        icon: <FaRegUser size={36} />,
+        iconColor: 'red',
+        bgColor: '#122938',
+      },
+      {
+        title: '100+',
+        description: 'Krajów na całym świecie',
+        icon: <IoEarthSharp size={36} />,
+        iconColor: 'red',
+        bgColor: '#202028',
+      },
     ],
   ];
   return (
@@ -36,12 +101,6 @@ const SwiperBox = () => {
       pagination={{ clickable: true }}
       spaceBetween={5}
       slidesPerView={1}
-      // onSlideChange={() => {
-      //   console.log('slide change')
-      // }}
-      // onSwiper={(swiper) => {
-      //   console.log(swiper)
-      // }}
     >
       <SwiperSlide>
         <div className="swiperContent">
@@ -59,6 +118,7 @@ const SwiperBox = () => {
                 key={element.title}
                 text={element.title}
                 description={element.description}
+                icon={element.icon}
               />
             ))}
           </div>
@@ -80,6 +140,7 @@ const SwiperBox = () => {
                 key={element.title}
                 text={element.title}
                 description={element.description}
+                icon={element.icon}
               />
             ))}
           </div>
@@ -101,6 +162,8 @@ const SwiperBox = () => {
                 key={element.title}
                 text={element.title}
                 description={element.description}
+                icon={element.icon}
+                bgColor={element.bgColor}
               />
             ))}
           </div>

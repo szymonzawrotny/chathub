@@ -1,2 +1,0 @@
-1. usuń możliwość przeciągania z grafik
-2. docker ? możesz to akurat zrobić póżniej
