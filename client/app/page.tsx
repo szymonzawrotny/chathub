@@ -1,13 +1,12 @@
 import '@/app/page.style.scss';
-import Image from 'next/image';
-import Blob from '@/images/blob.svg';
-import LeftSide from '@/components/loginPage/leftSide';
+import LeftSide from '@/components/loginPage/LeftSide';
+import RightSide from '@/components/loginPage/RightSide';
 
 const App = () => {
   return (
     <div className="app">
       <LeftSide />
-      <div className="rightSide"></div>
+      <RightSide />
     </div>
   );
 };

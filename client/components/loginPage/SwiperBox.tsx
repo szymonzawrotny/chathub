@@ -1,4 +1,5 @@
 'use client';
+import '@/components/loginPage/SwiperBox.style.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 import { ListItem } from '@/constants/types';
@@ -93,6 +94,7 @@ const SwiperBox = () => {
       },
     ],
   ];
+
   return (
     <Swiper
       effect={'coverflow'}

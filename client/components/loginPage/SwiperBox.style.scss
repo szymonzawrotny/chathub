@@ -1,0 +1,55 @@
+.app {
+  .leftSide {
+    main {
+      .swiperContent {
+        width: 100%;
+        height: 100%;
+        color: #fbfbfc;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15%;
+        h2 {
+          font-size: clamp(1.5rem, 3vw, 3.5rem);
+        }
+        .blueText {
+          color: #5e5bf0;
+        }
+        .description {
+          margin-top: 15px;
+          margin-bottom: 25px;
+          letter-spacing: 2px;
+          font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+          opacity: 0.8;
+          font-weight: 400;
+        }
+        .loginList {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .swiper,
+      .swiper-container,
+      .swiper-wrapper {
+        height: 100%;
+      }
+
+      .swiper-wrapper {
+        .swiper-slide {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+      }
+      .swiper-pagination {
+        text-align: left;
+        left: 10px;
+        right: auto;
+        width: auto;
+      }
+    }
+  }
+}

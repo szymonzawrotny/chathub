@@ -1,3 +1,5 @@
+import "@/components/loginPage/ListElement.style.scss";
+
 interface ListElementProps {
   text: string;
   description: React.ReactNode;

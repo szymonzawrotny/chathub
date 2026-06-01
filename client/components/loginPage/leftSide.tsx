@@ -1,9 +1,9 @@
 'use client';
-import '@/app/page.style.scss';
+import '@/components/loginPage/LeftSide.style.scss';
 import Image from 'next/image';
 import Blob from '@/images/blob.svg';
 import Logo from '@/images/icons/logo.png';
-import SwiperBox from "@/components/loginPage/SwiperBox"
+import SwiperBox from '@/components/loginPage/SwiperBox';
 
 const LeftSide = () => {
   return (
