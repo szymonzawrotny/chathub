@@ -1,4 +1,57 @@
 .rightSide {
   flex: 1;
+  display: flex;
   background-color: #141722;
+  justify-content: center;
+  align-items: center;
+  .languageOption {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fbfbfc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.8;
+    cursor: pointer;
+    .arrowIcon {
+      margin-left: 5px;
+    }
+  }
+  .loginPanel {
+    color: #fbfbfc;
+    border: 2px solid red;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+    p {
+      opacity: 0.6;
+    }
+    .choose {
+      display: flex;
+      width: 100%;
+      margin-top: 30px;
+      .login,
+      .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        flex-grow: 1;
+        cursor: pointer;
+      }
+
+      .login.selected,
+      .register.selected {
+        border-bottom: 2px solid #5e5bf0;
+        color: #5e5bf0;
+      }
+    }
+  }
 }
