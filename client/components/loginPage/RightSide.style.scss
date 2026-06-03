@@ -20,7 +20,6 @@
   }
   .loginPanel {
     color: #fbfbfc;
-    border: 2px solid red;
     width: 60%;
     height: 80%;
     display: flex;
@@ -52,6 +51,11 @@
         border-bottom: 2px solid #5e5bf0;
         color: #5e5bf0;
       }
+    }
+    .forms{
+      border: 2px solid red;
+      width:100%;
+      flex-grow:1;
     }
   }
 }

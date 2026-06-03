@@ -6,4 +6,9 @@ type ListItem = {
   bgColor?: string;
 };
 
+export enum AuthMode {
+  LOGIN = 'login',
+  REGISTER = 'register',
+}
+
 export type { ListItem };
