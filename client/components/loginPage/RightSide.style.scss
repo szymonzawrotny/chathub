@@ -28,9 +28,11 @@
     h2 {
       margin-bottom: 15px;
       font-size: 26px;
+      cursor: default;
     }
     p {
       opacity: 0.6;
+      cursor: default;
     }
     .choose {
       display: flex;
@@ -52,10 +54,79 @@
         color: #5e5bf0;
       }
     }
-    .forms{
-      border: 2px solid red;
-      width:100%;
-      flex-grow:1;
+    .forms {
+      width: 100%;
+      flex-grow: 1;
+      form {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        .inputName {
+          opacity: 0.6;
+          font-size: 12px;
+          margin: 5px 0 5px 0;
+          cursor: default;
+        }
+        .blueText {
+          color: #5e5bf0;
+          font-size: 12px;
+          margin-top: 5px;
+          margin-bottom: 25px;
+          cursor: pointer;
+        }
+        input[type='text'] {
+          padding: 10px;
+          margin-bottom: 10px;
+          background-color: #1a1e28;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          border: 1px solid rgba(211, 211, 211, 0.13);
+          color: white;
+          opacity: 0.8;
+          cursor: default;
+        }
+        input[type='submit'] {
+          background-color: #5e5bf0;
+          cursor: pointer;
+          border: none;
+          color: white;
+          text-transform: capitalize;
+          border-radius: 5px;
+          padding: 10px;
+        }
+        .socials {
+          display: flex;
+          flex-direction: column;
+          .line {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            text-transform: uppercase;
+            opacity: 0.6;
+            align-items: center;
+            cursor: default;
+            span {
+              flex-grow: 1;
+              height: 2px;
+              background-color: white;
+            }
+          }
+          .loginIcon {
+            border: 1px solid rgba(211, 211, 211, 0.13);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            .icon {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }
