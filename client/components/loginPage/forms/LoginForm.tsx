@@ -12,7 +12,7 @@ const LoginForm = () => {
       <span className="inputName">Email lub nazwa użytkownika</span>
       <input type="text" placeholder="Wprowadź email lub nazwę użytkownika" />
       <span className="inputName">Hasło</span>
-      <input type="text" placeholder="Wprowadź swoje hasło" />
+      <input type="password" placeholder="Wprowadź swoje hasło" />
       <div className='blueText'>Nie pamiętasz hasła?</div>
       <input type="submit" value="zaloguj" />
       <Socials />

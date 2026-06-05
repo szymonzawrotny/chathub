@@ -74,7 +74,26 @@
           margin-bottom: 25px;
           cursor: pointer;
         }
-        input[type='text'] {
+        .accept {
+          font-size: 12px;
+          margin-top: 5px;
+          margin-bottom: 25px;
+          cursor: default;
+          display: flex;
+          align-items: center;
+          span.blue {
+            color: #5e5bf0;
+            margin: 0 5px 0 5px;
+            cursor: pointer;
+          }
+          input[type='checkbox'] {
+            margin-right: 10px;
+            cursor: pointer;
+            accent-color: #5e5bf0;
+          }
+        }
+        input[type='text'],
+        input[type='password'] {
           padding: 10px;
           margin-bottom: 10px;
           background-color: #1a1e28;
