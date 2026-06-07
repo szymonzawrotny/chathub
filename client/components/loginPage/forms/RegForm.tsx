@@ -1,5 +1,6 @@
 import React from 'react';
 import Socials from '@/components/loginPage/forms/Socials';
+import Link from 'next/link';
 
 const RegForm = () => {
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
@@ -19,8 +20,14 @@ const RegForm = () => {
       <input type="password" placeholder="Powtórz swoje hasło" />
       <div className="accept">
         <input type="checkbox" />
-        Akceptuję <span className="blue">Regulamin</span> oraz{' '}
-        <span className="blue">Politykę prywatności</span>
+        Akceptuję{' '}
+        <Link className="blue" href="/terms">
+          Regulamin
+        </Link>{' '}
+        oraz{' '}
+        <Link className="blue" href="/policy">
+          Politykę prywatności
+        </Link>
       </div>
       <input type="submit" value="zaloguj" />
       <Socials />

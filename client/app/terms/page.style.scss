@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+.terms {
+  height: 100svh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(circle at top left, #5b5cff33, transparent 40%),
+    radial-gradient(circle at bottom right, #3b82f633, transparent 50%), #141832;
+  .blobBottom {
+    position: absolute;
+    right: -150px;
+    bottom: 0;
+    filter: blur(15px);
+    transform: rotate(-90deg) scale(1.5);
+  }
+  .blobTop {
+    position: absolute;
+    left: -150px;
+    top: 0;
+    filter: blur(15px);
+    transform: rotate(-90deg) scale(1.75);
+  }
+  .blobBottom::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -200%);
+    border-radius: 50%;
+    background-color: #4d1e7e;
+    box-shadow: 0 15px 30px 30px #4d1e7e;
+  }
+}

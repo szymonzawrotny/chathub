@@ -12,14 +12,14 @@
       position: absolute;
       right: -150px;
       bottom: 0;
-      filter: blur(5px);
+      filter: blur(15px);
       transform: rotate(-90deg) scale(1.5);
     }
     .blobTop {
       position: absolute;
       left: -150px;
       top: 0;
-      filter: blur(5px);
+      filter: blur(15px);
       transform: rotate(-90deg) scale(1.75);
     }
     .blobBottom::before {
