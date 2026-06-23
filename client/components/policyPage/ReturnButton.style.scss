@@ -1,0 +1,17 @@
+.returnButton {
+  position: absolute;
+  right: 25px;
+  top: 35px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #704aa8;
+  color: #704aa8;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #0b0e23;
+  span {
+    margin-left: 5px;
+  }
+}

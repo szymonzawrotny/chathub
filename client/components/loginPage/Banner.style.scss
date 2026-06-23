@@ -1,0 +1,15 @@
+.banner {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  .bannerText {
+    color: #fbfbfc;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: default;
+    transform: translateX(-5px);
+  }
+}

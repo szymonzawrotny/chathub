@@ -34,21 +34,6 @@
       background-color: #4d1e7e;
       box-shadow: 0 15px 30px 30px #4d1e7e;
     }
-    .banner {
-      position: absolute;
-      left: 15px;
-      top: 15px;
-      display: flex;
-      align-items: center;
-      .bannerText {
-        color: #fbfbfc;
-        font-size: clamp(1rem, 1.5vw, 2rem);
-        font-weight: 600;
-        letter-spacing: 2px;
-        cursor: default;
-        transform: translateX(-5px);
-      }
-    }
     main {
       position: absolute;
       top: 55%;
