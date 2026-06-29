@@ -13,6 +13,8 @@ body,
 .policy {
   height: 100svh;
   display: flex;
+  padding-top: 15svh;
+  z-index: 20;
   flex-direction: row;
   overflow: hidden;
   position: relative;
@@ -26,9 +28,11 @@ body,
     bottom: 0;
     filter: blur(15px);
     transform: rotate(-90deg) scale(1.5);
+    z-index: -1;
   }
   .blobTop {
     position: absolute;
+    z-index: -1;
     left: -150px;
     top: 0;
     filter: blur(15px);
@@ -43,7 +47,37 @@ body,
     left: 50%;
     transform: translate(-60%, -200%);
     border-radius: 50%;
+    z-index: -1;
     background-color: #4d1e7e;
     box-shadow: 0 15px 30px 30px #4d1e7e;
+  }
+  .sideBar {
+    margin-left: 35px;
+    background-color: #141832;
+    width: 20vw;
+    height: 75%;
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: space-around;
+    .barTitle {
+      color: aliceblue;
+      font-weight: 800;
+      margin-left: 10px;
+    }
+    .chaptersListElement {
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      .chapterText {
+        margin-left: 10px;
+      }
+    }
+    .chaptersListElement.active {
+      background-color: #2c1376;
+    }
   }
 }
